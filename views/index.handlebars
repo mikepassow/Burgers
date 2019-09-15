@@ -1,0 +1,91 @@
+
+<style>
+
+    .container1{
+        background-color: red;
+        text-align: center;
+
+    }
+    .container2{
+        float: left;
+
+    }
+     body {
+ 	width: 75%;
+	margin: 0 auto; 
+
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: white;
+ }
+  html {
+ 	background-color: #FFC04C;
+ }
+ img {
+     display: block;
+    margin: auto;
+ }
+  h1 {
+ 	text-align: center;
+ 	font-family: 'Fontdiner Swanky';
+ 	font-size: 65px;
+ 	margin: 50px;
+ }
+</style>
+
+
+<div class="container1">
+    <div class="row">
+        <div class="col-xs-12 text-center" id="top-bar">
+            <h1>Make a burger, Eat a Burger!</h1>
+            <img src="https://media.istockphoto.com/photos/double-cheese-burger-picture-id945057664?k=6&m=945057664&s=612x612&w=0&h=RUo4h_hgeBaExePasl-2YDhEMp4iKKScKpxX_mXlJVY="> 
+        </div>
+        <div class="col-xs-6 text-center" class="task">
+            <div class="row">
+                {{#each burger_data}}
+                {{#unless this.devoured}}
+                <div class="col-xs-9 text-center">
+                    <pre>{{this.id}}. {{this.burger_name}}</pre>
+                </div>
+                <div class="col-xs-3 float right">
+                    <form method="POST" action="/burgers/update?_method=PUT"
+                    class="button-size">
+                    <input type="hidden" name="burger_id" type="text" value={{this.id}}>
+                    <br>
+                    <button type="submit" class="btn btn-default"> DEVOUR IT! </button>
+                    </form>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+            <br>
+            <br>
+            <div class="col-xs-6 text-center" class="task">
+                <h3>Devoured Burgers</h3>
+                {{#each burger_data}}
+                {{#if this.devoured}}
+                <input class="form-control" type="text" placeholder="{{this.id}}. {{this.burger_name}} "readonly >
+                {{/if}}
+                {{/each}}
+            </div>
+    </div>
+</div>
+       
+            <div class="container1">
+                <div class="row">
+                    <div class="col-xs-12 text-center enter_section">
+                        <form action="/burgers/create" method="POST">
+                        <h3>Enter your next burger to devour</h3>
+                        <input type="text" name="burger_name" class="form-control" value="" id="enter_text"> 
+                        <br>
+                        <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
+                        <br>
+                        
+                        <br>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
