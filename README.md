@@ -17,9 +17,9 @@
 
 <p>Next, install the application dependencies.</p>
 <ul>
-<li>cd eat-da-burger</li>
+<li>cd burgers</li>
 <li>npm install</li>
-<li>Finally, run the node server locally.</li>
+<li>Finally, run the node server locally. (node server.js)</li>
 </ul>
 
 <h3>Node server</h3>
