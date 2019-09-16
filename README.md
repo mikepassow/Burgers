@@ -3,7 +3,8 @@
 
 <h1>Eat Da Burger!</h1>
 <hr>
-<h2>A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars. Deployed to heroku.<h2>
+<h2>A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars.</h2> 
+<h2>Deployed to heroku.</h2>
 
 <h3>Description</h3>
 <p>This application demonstrates a simple full stack application with a front end implemented with HTML/CSS and elements from the Materialize framework and the backend implemented with Node.js and Express. HTML templating is done with the help of Handlebars.</p>
