@@ -31,3 +31,10 @@
 <p>Open this app through heroku <link>https://stark-hollows-68543.herokuapp.com/</link></p>
 
 <p>Enjoy and have a burger!</p>
+
+<h2>Screenshot of How it Works</h2>
+
+<div>
+    <img src="screenshots/burger1" width="400px"> 
+     <img src="screenshots/bamazon.png" width="400px"> 
+</div>
