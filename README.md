@@ -35,6 +35,6 @@
 <h2>Screenshot of How it Works</h2>
 
 <div>
-    <img src="screenshots/burger1" width="400px"> 
-     <img src="screenshots/bamazon.png" width="400px"> 
+    <img src="screenshots/burger1.png" width="400px"> 
+     <img src="screenshots/burger2.png" width="400px"> 
 </div>
